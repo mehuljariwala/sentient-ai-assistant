@@ -31,7 +31,8 @@ Sentient AI Assistant is a full-featured chat application that demonstrates mode
 
 
 ## Test coverage
-<img width="724" alt="image" src="https://github.com/user-attachments/assets/448b979f-00b8-4090-aa9a-f9215bbe28c7" />
+<img width="721" alt="image" src="https://github.com/user-attachments/assets/20b1f22f-20be-4c53-aa00-d211bd00c36c" />
+
 
 ## 🏗️ Architecture
 
