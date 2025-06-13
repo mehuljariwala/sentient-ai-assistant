@@ -1,4 +1,7 @@
-import { HOME_PAGE_CONFIG, HOME_PAGE_CLASSES } from "./Home.data";
+import {
+  HOME_PAGE_CONFIG,
+  HOME_PAGE_CLASSES,
+} from "./../../../pages/home/Home.data';";
 
 describe("Home Page Data", () => {
   describe("HOME_PAGE_CONFIG", () => {
