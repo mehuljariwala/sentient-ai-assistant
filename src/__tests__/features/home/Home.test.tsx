@@ -1,7 +1,7 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
-import { HomePage } from "./Home";
 import { useAssistantStore } from "@/store/assistant-store";
+import HomePage from "@/features/home";
 
 // Mock the components
 jest.mock("@/components/Sidebar", () => ({
