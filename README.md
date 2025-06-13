@@ -21,6 +21,18 @@ Sentient AI Assistant is a full-featured chat application that demonstrates mode
 - 🏗️ **Scalable Architecture**: Modular component structure with clear separation of concerns
 - 🎭 **Type Safe**: Full TypeScript implementation for better developer experience
 
+## Screenshots
+<img width="2052" alt="image" src="https://github.com/user-attachments/assets/16d6017d-1eee-4bdb-af0b-c2556a4e7d4d" />
+
+<img width="2048" alt="image" src="https://github.com/user-attachments/assets/8ea3ade9-09da-4800-8b9e-3c40eb611531" />
+
+<img width="829" alt="image" src="https://github.com/user-attachments/assets/74881db6-8c1f-4715-8a45-f38e918d41df" />
+
+
+
+## Test coverage
+<img width="724" alt="image" src="https://github.com/user-attachments/assets/448b979f-00b8-4090-aa9a-f9215bbe28c7" />
+
 ## 🏗️ Architecture
 
 ### Application Flow Diagram
@@ -163,8 +175,8 @@ sentient-ai-assistant/
 │   │   ├── Sidebar/           # Desktop navigation
 │   │   └── SuggestedPrompts/  # Prompt suggestions
 │   │
-│   ├── pages/                 # Page components
-│   │   └── home/              # Home page component
+│   ├── features/              # Feature modules
+│   │   └── home/              # Home page feature
 │   │
 │   ├── store/                 # State management
 │   │   └── assistant-store.ts # Zustand store
@@ -172,8 +184,12 @@ sentient-ai-assistant/
 │   ├── types/                 # TypeScript types
 │   │   └── assistant.ts       # Core type definitions
 │   │
-│   └── lib/                   # Utilities
-│       └── utils.ts           # Helper functions
+│   ├── lib/                   # Utilities
+│   │   └── utils.ts           # Helper functions
+│   │
+│   └── __tests__/             # Test files
+│       └── features/          # Feature tests
+│           └── home/          # Home page tests
 │
 ├── public/                    # Static assets
 ├── coverage/                  # Test coverage reports
@@ -367,6 +383,13 @@ interface AssistantStore {
 - **Maintainability**: Easy to locate and modify specific features
 - **Testing**: Isolated components are easier to test
 - **Team Collaboration**: Clear boundaries for parallel development
+
+**Why Features Directory Instead of Pages?**
+
+- **Next.js App Router**: Using the App Router means routes are defined in the `app` directory
+- **Separation of Concerns**: Features directory separates business logic from routing
+- **Avoiding Conflicts**: Prevents Next.js from treating non-page files as routes
+- **Better Organization**: Groups related components, styles, and tests together
 
 ### Styling Approach
 
