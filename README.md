@@ -175,8 +175,8 @@ sentient-ai-assistant/
 │   │   ├── Sidebar/           # Desktop navigation
 │   │   └── SuggestedPrompts/  # Prompt suggestions
 │   │
-│   ├── pages/                 # Page components
-│   │   └── home/              # Home page component
+│   ├── features/              # Feature modules
+│   │   └── home/              # Home page feature
 │   │
 │   ├── store/                 # State management
 │   │   └── assistant-store.ts # Zustand store
@@ -184,8 +184,12 @@ sentient-ai-assistant/
 │   ├── types/                 # TypeScript types
 │   │   └── assistant.ts       # Core type definitions
 │   │
-│   └── lib/                   # Utilities
-│       └── utils.ts           # Helper functions
+│   ├── lib/                   # Utilities
+│   │   └── utils.ts           # Helper functions
+│   │
+│   └── __tests__/             # Test files
+│       └── features/          # Feature tests
+│           └── home/          # Home page tests
 │
 ├── public/                    # Static assets
 ├── coverage/                  # Test coverage reports
@@ -379,6 +383,13 @@ interface AssistantStore {
 - **Maintainability**: Easy to locate and modify specific features
 - **Testing**: Isolated components are easier to test
 - **Team Collaboration**: Clear boundaries for parallel development
+
+**Why Features Directory Instead of Pages?**
+
+- **Next.js App Router**: Using the App Router means routes are defined in the `app` directory
+- **Separation of Concerns**: Features directory separates business logic from routing
+- **Avoiding Conflicts**: Prevents Next.js from treating non-page files as routes
+- **Better Organization**: Groups related components, styles, and tests together
 
 ### Styling Approach
 
