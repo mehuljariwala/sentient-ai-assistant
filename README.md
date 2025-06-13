@@ -21,6 +21,18 @@ Sentient AI Assistant is a full-featured chat application that demonstrates mode
 - 🏗️ **Scalable Architecture**: Modular component structure with clear separation of concerns
 - 🎭 **Type Safe**: Full TypeScript implementation for better developer experience
 
+## Screenshots
+<img width="2052" alt="image" src="https://github.com/user-attachments/assets/16d6017d-1eee-4bdb-af0b-c2556a4e7d4d" />
+
+<img width="2048" alt="image" src="https://github.com/user-attachments/assets/8ea3ade9-09da-4800-8b9e-3c40eb611531" />
+
+<img width="829" alt="image" src="https://github.com/user-attachments/assets/74881db6-8c1f-4715-8a45-f38e918d41df" />
+
+
+
+## Test coverage
+<img width="724" alt="image" src="https://github.com/user-attachments/assets/448b979f-00b8-4090-aa9a-f9215bbe28c7" />
+
 ## 🏗️ Architecture
 
 ### Application Flow Diagram
